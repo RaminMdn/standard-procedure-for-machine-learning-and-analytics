@@ -3,6 +3,8 @@ The goal is that the standard procedure to follow in a machine learning or data 
 
 Although a general flow for such problems may be considered, for each problem type, a specific list (separate files) are included. The type of the problems are:
 
+# Types of Machine Learning and Data Analysis Projects
+
 ## 1. Supervised Learning
 > Predict a label or value from labeled data.
 
@@ -116,7 +118,7 @@ These may or may not involve machine learning.
 
 ---
 
-# Specialized ML Project Types (specific domain or 
+# Specialized ML Project Types (specific domain, specific purpose, and/or specific data)
 
 ### A. Time Series Analysis
 - **Examples:**
