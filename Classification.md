@@ -1,4 +1,4 @@
-<h1>2. Classification Projects</h1>
+<h1> Classification Projects</h1>
 
 <h2>Objective</h2>
 <p>Predict a <strong>categorical class/label</strong> from input features.</p>
