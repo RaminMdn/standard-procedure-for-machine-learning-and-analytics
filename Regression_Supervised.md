@@ -85,3 +85,87 @@
   <tr><td>21</td><td>Deployment Preparation</td><td>Save the final model and the complete preprocessing pipeline.</td></tr>
   <tr><td>22</td><td>Monitoring</td><td>Plan for monitoring the model's performance and data/concept drift in production. Define retraining triggers.</td></tr>
 </table>
+
+
+
+# Regression (md table)
+
+## Phase 1: Problem Definition and Data Collection
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 1    | Define Business Objectives| Clarify the problem, project goals, Key Performance Indicators (KPIs), and success criteria. |
+| 2    | Define Data Strategy      | Identify and gather data from sources like APIs, databases, or public datasets. |
+
+## Phase 2: Ingestion & Assessment
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 3    | Initial File Verification | Check if the dataset files exist, are accessible, and in the correct format (e.g., CSV, Excel). Confirm correct encoding and delimiter. |
+| 4    | Module and Data Load      | Import necessary libraries (e.g., pandas, numpy) and load the data into memory for exploration. |
+| 5    | Initial Exploration and Assessment | Use methods like `df.info()`, `df.describe()`, and `df.head()` to assess structure, data types, and basic statistics. |
+
+## Phase 3: Initial Cleaning
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 6    | Handling Duplicates       | Identify and remove duplicate rows using `df.duplicated()` and `df.drop_duplicates()` to ensure data integrity. |
+| 7    | Inconsistent Formatting   | Detect and fix formatting issues like inconsistent casing, extra spaces, or mixed data types in categorical fields. |
+| 8    | Data Corruption or Abnormal Values | Look for corrupted, nonsensical, or extreme outlier values that may indicate data entry issues or sensor errors. Use domain knowledge or statistical thresholds to flag and address them. |
+
+## Phase 4: Exploratory Data Analysis (EDA)
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 9    | Initial EDA               | Plot histograms, boxplots, and use summary stats. Use scatterplots and correlation matrices to identify relationships. |
+| 10   | Analyze Target Variable   | Examine the distribution of the target variable (`y`). Check for class imbalance, skew, and outliers. |
+| 11   | Identify Potential Outliers | Use visualizations (histograms, boxplots) and statistical methods (Z-scores, Isolation Forest) to detect potential outliers. Do not remove or modify them yet. |
+
+## Phase 5: Data Splitting
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 12   | Split Data                | Divide the dataset into training, validation, and test sets. A common split is 80%/10%/10%. |
+| 13   | Save the Test Set         | Store the test set separately and do not use it for any purpose until the final model evaluation to prevent data leakage. |
+
+## Phase 6: Preprocessing (Train/Validation Data Only)
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 14a  | Handle Outliers           | On training data only: Remove outliers using methods like IQR or Z-score. Transform skewed data using log, square root, or Box-Cox transformations. |
+| 14b  | Handle Missing Values     | Impute missing values using techniques like mean/median for numerical data or mode for categorical data. |
+| 14c  | Encode Categorical Variables | Apply one-hot encoding for nominal features, label encoding for ordinal features, and other techniques for high-cardinality features. |
+| 14d  | Process Text Features     | Clean, tokenize, and vectorize text using methods like TF-IDF or word embeddings. |
+| 14e  | Feature Scaling           | Fit the scaler on the training data only, then transform both the training and validation sets using methods like StandardScaler or MinMaxScaler. |
+
+## Phase 7: Feature Engineering
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 15   | Create New Features       | Derive new features (e.g., polynomial, interaction) from existing ones. |
+
+## Phase 8: Feature Selection and Dimensionality Reduction
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 16   | Feature Selection         | Select the most relevant features using techniques like Lasso regularization, Recursive Feature Elimination (RFE), or feature importance scores. |
+| 17   | Dimensionality Reduction  | Apply PCA, t-SNE, or other techniques if needed to reduce feature space for high-dimensional data. |
+
+## Phase 9: Modeling and Evaluation (Train/Validation Data Only)
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 18   | Modeling                  | Train multiple candidate models on the prepared training data. |
+| 19   | Cross-Validation          | Use K-Fold cross-validation on the training data to get a robust estimate of model performance. |
+| 20   | Hyperparameter Tuning     | Use techniques like GridSearchCV or RandomizedSearchCV to optimize model hyperparameters within the training data. |
+| 21   | Validation Evaluation     | Evaluate the tuned models on the validation set using chosen metrics (e.g., RMSE, MAE, R²). |
+
+## Phase 10: Final Evaluation and Deployment
+
+| Step | Action                    | Notes                                                                 |
+|------|---------------------------|-----------------------------------------------------------------------|
+| 22   | Final Prediction          | Apply the entire trained pipeline to the completely unseen test set. Never refit or reprocess the test data. |
+| 23   | Final Evaluation          | Evaluate the final model on the test set using the same metrics. Report performance. |
+| 24   | Interpretation            | Explain model predictions using tools like SHAP or feature importance plots. |
+| 25   | Deployment Preparation    | Save the final model and the complete preprocessing pipeline. |
+| 26   | Monitoring                | Plan for monitoring the model's performance and data/concept drift in production. Define retraining triggers. |
