@@ -1,0 +1,89 @@
+
+
+<h1>3. Clustering Projects</h1>
+
+<h2>Objective</h2>
+<p>Group similar data points together without using labels.</p>
+
+<h2>Example Use Cases</h2>
+<ul>
+  <li>Customer segmentation</li>
+  <li>Document or news article clustering</li>
+  <li>Image segmentation</li>
+  <li>Market basket pattern discovery</li>
+  <li>Anomaly detection</li>
+</ul>
+
+<h2>General Procedure</h2>
+
+<h3>1. Define the Problem</h3>
+<ul>
+  <li>Identify the goal: segmentation, anomaly detection, pattern discovery</li>
+  <li>Determine if the data is suitable for clustering</li>
+</ul>
+
+<h3>2. Collect and Explore the Data</h3>
+<ul>
+  <li>Perform EDA</li>
+  <li>Visualize data distributions</li>
+  <li>Use pairplots, PCA, or t-SNE for visualization</li>
+</ul>
+
+<h3>3. Feature Engineering</h3>
+<ul>
+  <li>Normalize or scale numerical features</li>
+  <li>Encode categorical features appropriately</li>
+  <li>Reduce dimensionality (optional)</li>
+</ul>
+
+<h3>4. Choose Clustering Algorithms</h3>
+<ul>
+  <li>K-Means</li>
+  <li>Hierarchical Clustering</li>
+  <li>DBSCAN</li>
+  <li>Gaussian Mixture Models</li>
+  <li>Spectral Clustering</li>
+</ul>
+
+<h3>5. Choose Number of Clusters</h3>
+<ul>
+  <li>Elbow Method</li>
+  <li>Silhouette Score</li>
+  <li>Gap Statistic</li>
+</ul>
+
+<h3>6. Fit the Clustering Model</h3>
+<ul>
+  <li>Train on the dataset</li>
+  <li>Assign each data point to a cluster</li>
+</ul>
+
+<h3>7. Evaluate the Clusters</h3>
+<ul>
+  <li>Internal metrics:
+    <ul>
+      <li>Silhouette Score</li>
+      <li>Davies-Bouldin Index</li>
+    </ul>
+  </li>
+  <li>External metrics (if labels exist):
+    <ul>
+      <li>Adjusted Rand Index</li>
+      <li>Mutual Information Score</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>8. Interpret the Clusters</h3>
+<ul>
+  <li>Analyze centroids or representative points</li>
+  <li>Profile each cluster (summary statistics, key features)</li>
+  <li>Visualize with PCA/t-SNE/UMAP</li>
+</ul>
+
+<h3>9. Use or Deploy Clusters</h3>
+<ul>
+  <li>Use clusters in downstream tasks (e.g., recommendations, targeting)</li>
+  <li>Store cluster labels for future analysis</li>
+  <li>Re-train periodically if data evolves</li>
+</ul>
