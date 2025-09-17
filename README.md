@@ -7,20 +7,20 @@ Although a general flow for such problems may be considered, for each problem ty
 
 - **Types of Machine Learning and Data Analysis Projects**
 
-  - **Supervised Learning**
+  - Supervised Learning
     - Regression
     - Classification
 
-  - **Unsupervised Learning**
+  - Unsupervised Learning
     - Clustering
     - Dimensionality Reduction
     - Association Rule Learning
 
-  - **Semi-Supervised Learning**
+  - Semi-Supervised Learning
 
-  - **Reinforcement Learning**
+  - Reinforcement Learning
 
-  - **Self-Supervised Learning**
+  - Self-Supervised Learning
 
 - **Types of Data Analysis Projects**
   - Descriptive Analysis
