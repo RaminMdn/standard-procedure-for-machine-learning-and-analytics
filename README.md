@@ -6,7 +6,8 @@ Although a general flow for such problems may be considered, for each problem ty
 <br> 
 
 
-|-- **Types of Machine Learning and Data Analysis Projects**
+**Types of Machine Learning and Data Analysis Projects**
+
 |
 |-- **1. Supervised Learning**
 |   |-- A. Regression
