@@ -4,7 +4,8 @@ The goal is that the standard procedure to follow in a machine learning or data 
 Although a general flow for such problems may be considered, for each problem type, a specific list (separate files) are included. The type of the problems are as follows. Please feel free to suggest changes for each of the existing files, or add files for the types that are not included yet.
 
 <br> 
-.
+
+
 |-- **Types of Machine Learning and Data Analysis Projects**
 |
 |-- **1. Supervised Learning**
