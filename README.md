@@ -1,5 +1,159 @@
 # standard-procedure-for-machine-learning-and-analytics
-Standard procedure to follow in a machine learning or data science, or analytics project
+The goal is that the standard procedure to follow in a machine learning or data science, or analytics project is compiled, so it can be used as an initial template when dealing with such projects.
+
+Although a general flow for such problems may be considered, for each problem type, a specific list (separate files) are included. The type of the problems are:
+
+## 1. Supervised Learning
+> Predict a label or value from labeled data.
+
+### A. Regression
+- Predict **continuous values**
+- **Examples:**
+  - Predicting house prices
+  - Forecasting stock prices
+  - Estimating life expectancy
+  - Energy consumption prediction
+
+### B. Classification
+- Predict **categorical labels**
+- **Examples:**
+  - Spam vs. non-spam emails
+  - Disease diagnosis
+  - Sentiment analysis
+  - Fraud detection
+
+---
+
+## 2. Unsupervised Learning
+> Find hidden patterns in unlabeled data.
+
+### A. Clustering
+- Group similar data points
+- **Examples:**
+  - Customer segmentation
+  - Image segmentation
+  - Market basket analysis
+  - Anomaly detection (unsupervised)
+
+### B. Dimensionality Reduction
+- Reduce number of features while preserving important information
+- **Examples:**
+  - PCA (Principal Component Analysis)
+  - t-SNE / UMAP for visualization
+  - Feature extraction before modeling
+
+### C. Association Rule Learning
+- Discover relationships between variables
+- **Examples:**
+  - Market basket analysis
+  - Recommendation systems
+
+---
+
+## 3. Semi-Supervised Learning
+> Mix of labeled and unlabeled data
+
+- **Examples:**
+  - Medical image classification with few labeled samples
+  - Web page categorization with limited data
+
+---
+
+## 4. Reinforcement Learning
+> Learn through rewards and penalties by interacting with an environment
+
+- **Examples:**
+  - Game playing (Chess, Go, Dota)
+  - Robotics
+  - Self-driving cars
+  - Ad bidding systems
+
+---
+
+## 5. Self-Supervised Learning
+> Learn representations without manual labels (especially in NLP and Vision)
+
+- **Examples:**
+  - SimCLR, MoCo
+  - BERT, GPT pretraining
+
+---
+
+# Types of Data Analysis Projects
+
+These may or may not involve machine learning.
+
+### A. Descriptive Analysis
+- Summarize what happened
+- **Examples:**
+  - KPI dashboards
+  - Sales reports
+  - Web analytics
+
+### B. Diagnostic Analysis
+- Understand why something happened
+- **Examples:**
+  - Root cause analysis
+  - A/B test performance breakdown
+
+### C. Predictive Analysis
+- Predict future outcomes
+- **Examples:**
+  - Sales forecasting
+  - Churn prediction
+
+### D. Prescriptive Analysis
+- Recommend actions
+- **Examples:**
+  - Marketing campaign optimization
+  - Delivery route optimization
+
+### E. Exploratory Data Analysis (EDA)
+- Understand data, find patterns and outliers
+- **Examples:**
+  - Feature relationship discovery
+  - Data quality assessment
+
+---
+
+# Specialized ML Project Types (specific domain or 
+
+### A. Time Series Analysis
+- **Examples:**
+  - Stock forecasting
+  - Weather prediction
+  - IoT monitoring
+
+### B. Natural Language Processing (NLP)
+- **Examples:**
+  - Text classification
+  - Sentiment analysis
+  - NER (Named Entity Recognition)
+  - Language translation
+  - Chatbots
+
+### C. Computer Vision
+- **Examples:**
+  - Image classification
+  - Object detection
+  - Image segmentation
+  - OCR
+
+### D. Anomaly Detection
+- **Examples:**
+  - Intrusion detection
+  - Server failure prediction
+  - Fraud detection
+
+### E. Recommendation Systems
+- **Examples:**
+  - Movie recommendations
+  - E-commerce suggestions
+  - Music streaming personalization
+
+---
+
+
 <!--
 <style>
   table.clean {
@@ -27,7 +181,7 @@ Standard procedure to follow in a machine learning or data science, or analytics
     margin: 1.5em 0 0.5em;
   }
 </style>
--->
+
 <div class="phase-title">Phase 1: Problem Definition and Data Collection</div>
 <table class="clean">
   <tr><th>Step</th><th>Action</th><th>Notes</th></tr>
@@ -113,3 +267,5 @@ Standard procedure to follow in a machine learning or data science, or analytics
   <tr><td>21</td><td>Deployment Preparation</td><td>Save the final model and the complete preprocessing pipeline.</td></tr>
   <tr><td>22</td><td>Monitoring</td><td>Plan for monitoring the model's performance and data/concept drift in production. Define retraining triggers.</td></tr>
 </table>
+
+-->
