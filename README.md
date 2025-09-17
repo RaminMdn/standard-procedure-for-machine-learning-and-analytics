@@ -4,6 +4,39 @@ The goal is that the standard procedure to follow in a machine learning or data 
 Although a general flow for such problems may be considered, for each problem type, a specific list (separate files) are included. The type of the problems are as follows. Please feel free to suggest changes for each of the existing files, or add files for the types that are not included yet.
 
 <br> 
+.
+|-- **Types of Machine Learning and Data Analysis Projects**
+|
+|-- **1. Supervised Learning**
+|   |-- A. Regression
+|   |-- B. Classification
+|
+|-- **2. Unsupervised Learning**
+|   |-- A. Clustering
+|   |-- B. Dimensionality Reduction
+|   |-- C. Association Rule Learning
+|
+|-- **3. Semi-Supervised Learning**
+|
+|-- **4. Reinforcement Learning**
+|
+|-- **5. Self-Supervised Learning**
+|
+|-- **Types of Data Analysis Projects**
+|   |-- A. Descriptive Analysis
+|   |-- B. Diagnostic Analysis
+|   |-- C. Predictive Analysis
+|   |-- D. Prescriptive Analysis
+|   |-- E. Exploratory Data Analysis (EDA)
+|
+|-- **Specialized ML Project Types**
+|   |-- A. Time Series Analysis
+|   |-- B. Natural Language Processing (NLP)
+|   |-- C. Computer Vision
+|   |-- D. Anomaly Detection
+|   |-- E. Recommendation Systems
+
+
 
 # Types of Machine Learning and Data Analysis Projects
 
