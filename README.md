@@ -8,35 +8,38 @@ Although a general flow for such problems may be considered, for each problem ty
 
 **Types of Machine Learning and Data Analysis Projects**
 
+
+|-- Types of Machine Learning and Data Analysis Projects
 |
-|-- **1. Supervised Learning**
+|-- 1. Supervised Learning
 |   |-- A. Regression
 |   |-- B. Classification
 |
-|-- **2. Unsupervised Learning**
+|-- 2. Unsupervised Learning
 |   |-- A. Clustering
 |   |-- B. Dimensionality Reduction
 |   |-- C. Association Rule Learning
 |
-|-- **3. Semi-Supervised Learning**
+|-- 3. Semi-Supervised Learning
 |
-|-- **4. Reinforcement Learning**
+|-- 4. Reinforcement Learning
 |
-|-- **5. Self-Supervised Learning**
+|-- 5. Self-Supervised Learning
 |
-|-- **Types of Data Analysis Projects**
+|-- Types of Data Analysis Projects
 |   |-- A. Descriptive Analysis
 |   |-- B. Diagnostic Analysis
 |   |-- C. Predictive Analysis
 |   |-- D. Prescriptive Analysis
 |   |-- E. Exploratory Data Analysis (EDA)
 |
-|-- **Specialized ML Project Types**
+|-- Specialized ML Project Types
 |   |-- A. Time Series Analysis
 |   |-- B. Natural Language Processing (NLP)
 |   |-- C. Computer Vision
 |   |-- D. Anomaly Detection
 |   |-- E. Recommendation Systems
+
 
 
 
