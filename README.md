@@ -1,6 +1,6 @@
 # standard-procedure-for-machine-learning-and-analytics
 Standard procedure to follow in a machine learning or data science, or analytics project
-
+<!--
 <style>
   table.clean {
     border-collapse: collapse;
@@ -27,7 +27,7 @@ Standard procedure to follow in a machine learning or data science, or analytics
     margin: 1.5em 0 0.5em;
   }
 </style>
-
+-->
 <div class="phase-title">Phase 1: Problem Definition and Data Collection</div>
 <table class="clean">
   <tr><th>Step</th><th>Action</th><th>Notes</th></tr>
